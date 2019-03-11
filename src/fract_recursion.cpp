@@ -10,7 +10,6 @@ using namespace std;
 void cantorSet(GWindow& window, int x, int y, int length, int levels);
 
 int main() {
-    cout << "Hellow World!" << endl;
     GWindow window(800, 600);
     window.setWindowTitle("CS 106B/ x fractals");
     window.setColor("black");
