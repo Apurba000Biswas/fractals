@@ -27,6 +27,14 @@ int main() {
     return 0;
 }
 
+
+/* We need to draw line in the following patterns
+ *  --------------------------------
+ *  ----------            ----------
+ *  ---    ---            ---    ---
+ *  - -    - -            - -    - -
+ */
+
 void cantorSet(GWindow& window, int x, int y, int length, int levels){
     if(levels == 1){
         // base case
