@@ -15,8 +15,21 @@
 #include "vector.h"  // for Vector
 using namespace std;
 
-int main() {
+void cantorSet(GWindow& window, int x, int y, int length, int levels);
 
+int main() {
     cout << "Hellow World!" << endl;
+    GWindow window(800, 600);
+    window.setWindowTitle("CS 106B/ x fractals");
+    window.setColor("black");
+
+    cantorSet(window, 50, 50, 700, 1);
     return 0;
+}
+
+void cantorSet(GWindow& window, int x, int y, int length, int levels){
+    if(levels == 1){
+        // base case
+        window.drawLine(x,y, x+length, y);
+    }
 }
